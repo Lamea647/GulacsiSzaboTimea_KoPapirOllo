@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewEmber"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/rock"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewValasztasEmber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewEmber"
+        android:text="A te választásod"
+        android:layout_marginVertical="15sp"
+        android:textAlignment="center"
+        android:textSize="35sp" />
+
+    <ImageView
+        android:id="@+id/imageViewGep"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/rock"
+        android:layout_below="@id/textViewValasztasEmber"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewValasztasGep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewGep"
+        android:layout_marginVertical="15sp"
+        android:text="A gép választása"
+        android:textAlignment="center"
+        android:textSize="35sp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewValasztasGep"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewEredmeny"
+            android:layout_weight="1"
+            android:layout_width="120sp"
+            android:layout_height="65sp"
+            android:textAlignment="center"
+            android:text="Eredmény:"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewEredmenyEmber"
+            android:layout_weight="1"
+            android:layout_width="120sp"
+            android:layout_height="65sp"
+            android:textAlignment="center"
+            android:text="Ember: 0"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textViewEredmenyGep"
+            android:layout_weight="1"
+            android:layout_width="120dp"
+            android:layout_height="65sp"
+            android:textAlignment="center"
+            android:text="Computer: 0"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonKo"
+            android:layout_weight="1"
+            android:layout_width="100sp"
+            android:layout_height="65sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="15sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#AFAAAA"
+            android:text="KŐ"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonPapir"
+            android:layout_weight="1"
+            android:layout_width="100sp"
+            android:layout_height="65sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="15sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#AFAAAA"
+            android:text="PAPÍR"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonOllo"
+            android:layout_weight="1"
+            android:layout_width="100sp"
+            android:layout_height="65sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="15sp"
+            android:textColor="@color/black"
+            android:backgroundTint="#AFAAAA"
+            android:text="OLLÓ"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>
